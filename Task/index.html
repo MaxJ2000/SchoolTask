@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弘扬爱国奋斗精神 建功立业新时代</title>
+    <base target="_blank">
+    <style>
+        footer, header, nav,body {
+            display: block;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        body{
+            flex-direction: column;
+            background: rgb(239,236,236);
+            line-height: 1;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+        *{
+            padding:0;
+            margin: 0;
+        }
+
+        .header{
+            flex: 0 0 ;
+            width: 100%;
+            background: red;
+            display: flex;
+        }
+        .header img{
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+        }
+
+        .mainFirst,.mainSecond,.mainThird,.mainForth{
+            display: flex;
+            flex-direction: column;
+            width: 1000px;
+            margin: auto;
+        }
+        .mainTitle{
+            margin-top: 30px;
+            background-image:url("source/nav.jpg") ;
+            height: 30px;
+            display: flex;
+            align-items: center;
+        }
+        .mainTitle h1{
+            font-size: 20px;
+            margin: 10px;
+            font-weight: bold;
+        }
+        .mainContentFirst{
+            display: flex;
+            flex-direction: column;
+        }
+        .mainContentFirst div,.mainContentThird div,.mainContentForth div{
+            display: flex;
+        }
+        .mainContentFirst div a,.mainContentThird div a,.mainContentForth div a{
+            margin-top: 20px;
+            flex:  1 1 500px;
+            overflow: hidden;
+            white-space:nowrap;
+            text-overflow:ellipsis;
+        }
+
+        .time{
+            margin-top: 20px;
+            flex: 0 0 80px;
+        }
+        .knowMore{
+            width: 150px;
+            height: 30px;
+            font-size: 15px;
+            margin: 25px auto 0 auto;
+        }
+        .mainContentSecond{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .contentModel{
+            width: 45%;
+            display: flex;
+            margin: 30px 0 0 0;
+        }
+        .contentModel:hover{
+            background: lightgray;
+            cursor: pointer;
+        }
+        .contentModelImg{
+            height: 150px;
+        }
+        .contentModelText{
+            margin: 10px;
+        }
+        .contentModelText h2{
+            margin: 0 0 10px 0;
+            font-size: 18px;
+        }
+        .contentModelText p{
+            font-size: 15px;
+            line-height: 20px;
+        }
+        .mainContentForth{
+            margin-bottom: 50px;
+        }
+        .button1, .button2, .button3, .button4{
+            display: none;
+        }
+        .mainForth .mainTitle{
+            margin-top: 20px;
+        }
+        .lastButton{
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <img src="source/header.jpg">
+</div>
+<div class="mainFirst">
+    <div class="mainTitle">
+        <h1>文件精神</h1>
+    </div>
+    <div class="mainContentFirst">
+        <div><a href="//www.xinhuanet.com/politics/2018-07/31/c_1123204091.htm" target="_blank">>>> 中共中央组织部
+            中共中央宣传部关于在广大知识分子中深入开展“弘扬爱国奋斗精神、建功立业新时代”活动的通知（文件）</a>
+            <p class="time">2018/07/31</p></div>
+        <div><a href="//news.12371.cn/2018/08/01/VIDE1533089701838734.shtml" target="_blank">>>> 中央组织部
+            中央宣传部印发《关于在广大知识分子中深入开展“弘扬爱国奋斗精神、建功立业新时代”活动的通知》（视频）</a>
+            <p class="time">2018/08/01</p></div>
+        <div><a href="//news.12371.cn/2018/08/01/ARTI1533110732246390.shtml" target="_blank">>>>
+            在爱国奉献中书写精彩人生——中央组织部、中央宣传部负责人就在广大知识分子中深入开展“弘扬爱国奋斗精神、建功立业新时代”活动答记者问</a>
+            <p class="time">2018/08/01</p></div>
+        <div class="button1"><a href="//www.jyb.cn/zcg/xwy/wzxw/201809/t20180912_1218441.html" target="_blank">>>>
+            教育部办公厅关于印发《在教育系统知识分子中深入开展“弘扬爱国奋斗精神、建功立业新时代”活动的实施方案》的通知</a>
+            <p class="time">2018/09/12</p></div>
+        <div class="button1" style="display: none"><a href="#" target="_blank">>>> 华中科技大学关于深入开展“弘扬爱国奋斗精神、建功立业新时代”活动的工作方案</a>
+            <p class="time">2018/09/12</p></div>
+    </div>
+    <button class="knowMore" id="button1" onclick='button1()'>查看更多</button>
+<div class="mainThird">
+    <div class="mainTitle">
+        <h1>动态新闻</h1>
+    </div>
+    <div class="mainContentThird">
+        <div><a href="//news.hust.edu.cn/2018/0930/c155a92295/page.htm ">>>> 潘垣院士团队研制高压断路器开断容量达国际最高水平</a>
+            <p class="time">2018/09/30</p></div>
+        <div><a href="//paper.people.com.cn/rmrb/html/2018-09/19/nw.D110000renmrb_20180919_2-12.htm">>>>
+            电气与电子工程学院院长文劲宇：把每个学生好好培养出来</a>
+            <p class="time">2018/09/19</p></div>
+        <div><a href="//news.hust.edu.cn/2018/0916/c161a92099/page.htm">>>> 物理学院黎卿：一位博士后的科研“初体验” </a>
+            <p class="time">2018/09/16</p></div>
+        <div class="button2"><a href="//news.hust.edu.cn/_t6/2018/0918/c155a92127/page.htm">>>> 校党委举办“弘扬爱国奋斗精神、建功立业新时代”党外知识分子培训班</a>
+            <p class="time">2018/09/18</p></div>
+        <div class="button2"  style="display: none"><a href="//news.hust.edu.cn/2018/0918/c160a92126/page.htm">>>> 学术“萌新”修炼指南</a>
+            <p class="time">2018/09/18</p></div>
+        <div class="button2"  style="display: none"><a href="//news.hust.edu.cn/2018/0830/c155a91870/page.htm">>>> 蛰伏三十年 罗俊院士团队测得常数G最精确值</a>
+            <p class="time">2018/08/30</p></div>
+    </div>
+    <button class="knowMore" id="button2" onclick='button2()'>查看更多</button>
+</div>
+<div class="mainSecond">
+    <div class="mainTitle">
+        <h1>优秀典型</h1>
+    </div>
+    <div class="mainContentSecond">
+        <div class="contentModel" onclick="window.open('//www.12371.cn/2018/08/11/VIDE1533989161643622.shtml')">
+            <img class="contentModelImg";
+            height: 150px;" src="source/Qian.jpg">
+            <div class="contentModelText">
+                <h2>钱学森:中国航天事业奠基人</h2>
+                <p>作为“两弹一星”功勋奖章获得者的钱学森，数十年呕心沥血、攻坚克难，为了祖国的航天事业作出了彪炳史册的贡献。</p>
+            </div>
+        </div>
+        <div class="contentModel" onclick="window.open('//www.12371.cn/2018/08/11/VIDE1533989161643622.shtml')">
+            <img class="contentModelImg" src="source/Deng.jpg">
+            <div class="contentModelText">
+                <h2>两弹元勋邓稼先</h2>
+                <p>顶着重重压力，邓稼先和他的同事们进行上万次的计算，仅仅用了三年时间，就敲开了中国人自主研制原子弹的大门</p>
+            </div>
+        </div>
+        <div class="contentModel" onclick="window.open('//www.12371.cn/2018/08/13/VIDE1534121162275538.shtml')">
+            <img class="contentModelImg" src="source/Guo.jpg">
+            <div class="contentModelText">
+                <h2>"两弹一星"元勋郭永怀</h2>
+                <p>郭永怀横跨核弹、导弹、人造卫星三个领域，是唯一一位以烈士身份被追授“两弹一星”功勋奖章的科学家。</p>
+            </div>
+        </div>
+        <div class="contentModel" onclick="window.open('//www.12371.cn/2018/08/09/VIDE1533779341185676.shtml')">
+            <img class="contentModelImg" src="source/Huang.jpg">
+            <div class="contentModelText">
+                <h2>黄大年:振兴中华乃我辈之责</h2>
+                <p>作为国际著名地球物理学家的黄大年，为我国的深地资源探测和国防安全建设做出突出贡献，直到生命的最后一刻。</p>
+            </div>
+        </div>
+        <div class="contentModel" onclick="window.open('//www.12371.cn/2018/08/11/VIDE1533989041271602.shtml')">
+            <img class="contentModelImg" src="source/Zhong.jpg">
+            <div class="contentModelText">
+                <h2>钟扬:国家生态安全的守护者</h2>
+                <p>钟扬生前长期致力于生物多样性研究和保护，率领团队在青藏高原为国家种质库收集了数千万颗植物种子。</p>
+            </div>
+        </div>
+        <div class="contentModel"
+             onclick="window.open('//news.cctv.com/2018/08/30/ARTIZO7fzm2kE6KOme0Vj7Ry180830.shtml')">
+            <img class="contentModelImg" src="source/HuangQun.jpg">
+            <div class="contentModelText">
+                <h2>黄群：台风中 他用生命撑起船舶梦</h2>
+                <p>为了保护国家重点实验室，履行共产党员的职责，华中大校友黄群于2018年8月20日，因台风中抢救国家重点试验平台英勇就义。</p>
+            </div>
+        </div>
+        <div class="contentModel button3" onclick="window.open('//news.12371.cn/2018/08/10/VIDE1533892561067933.shtml')">
+            <img class="contentModelImg" src="source/Xi.jpg">
+            <div class="contentModelText">
+                <h2>"西迁精神":到祖国最需要的地方去</h2>
+                <p>1955年，交通大学一大批知识分子和青年学生，在祖国最需要的时候响应号召，投身到西部高等教育事业中。</p>
+            </div>
+        </div>
+        <div class="contentModel button3" onclick="window.open('//www.12371.cn/2018/08/14/VIDE1534204021316511.shtml')">
+            <img class="contentModelImg" src="source/Li.jpg">
+            <div class="contentModelText">
+                <h2>李保国：太行山上的新愚公</h2>
+                <p>30多年来，李保国带领团队，用科技为荒山带来苍翠，用产业为乡亲拔除“穷根”，用实际行动诠释了新时代的知识分子的本色。</p>
+            </div>
+        </div>
+        <div class="contentModel button3" onclick="window.open('//biaozhang.12371.cn/2017/11/19/ARTI1511043792828228.shtml')">
+            <img class="contentModelImg"  src="source/Nan.jpg">
+            <div class="contentModelText">
+                <h2>南仁东:只想踏踏实实做点事</h2>
+                <p>南仁东只想着能够踏踏实实地“做点事情”。即使在生命的最后半个月里，他仍然密切关注着FAST的每一步进展。</p>
+            </div>
+        </div>
+    </div>
+    <button class="knowMore" id="button3" onclick='button3()'>查看更多</button>
+</div>
+<div class="mainForth">
+    <div class="mainTitle">
+        <h1>学习交流</h1>
+    </div>
+    <div class="mainContentForth">
+        <div><a href="//www.xinhuanet.com/politics/2018-07/31/c_1123204361.htm">>>> 新华社评论员：弘扬报国志 建功新时代</a>
+            <p class="time">2018/07/31</p></div>
+        <div><a href="//paper.people.com.cn/rmrb/html/2018-08/10/nw.D110000renmrb_20180810_1-12.htm">>>> 怀进鹏：高扬爱国奋斗主旋律
+            引领创新建功新时代</a>
+            <p class="time">2018/08/10</p></div>
+        <div><a href="//paper.people.com.cn/rmrb/html/2018-08/14/nw.D110000renmrb_20180814_2-12.htm">>>>
+            邱勇：主动请缨，勇担时代使命</a>
+            <p class="time">2018/08/14</p></div>
+        <div class="button4"><a href="//paper.people.com.cn/rmrb/html/2018-08/16/nw.D110000renmrb_20180816_2-11.htm">>>>
+            张广智：让爱国奋斗成为新时代知识分子鲜明精神标识</a>
+            <p class="time">2018/08/16</p></div>
+        <div class="button4" style="display: none"><a href="//www.qstheory.cn/dukan/qs/2018-08/17/c_1123285114.htm">>>> 求是评论员：勇担民族复兴大任 争做新时代的奋斗者</a>
+            <p class="time">2018/08/17</p></div>
+        <div class="button4" style="display: none"><a href="//dzb.studytimes.cn/shtml/xxsb/20180822/35971.shtml">>>> 刘飞：弘扬伟大奋斗精神</a>
+            <p class="time">2018/08/22</p></div>
+    </div>
+    <button class="knowMore lastButton" id="button4" onclick='button4()'>查看更多</button>
+</div>
+</div>
+<script>
+    function button3() {
+        document.querySelector('#button3').classList.add('clicked');
+        const array = document.getElementsByClassName('button3');
+        const array2 = document.getElementById('button3');
+        array2.style.display='none';
+        for (let i = 0; i < array.length; i++) {
+            array[i].style.display = 'flex';
+        }
+    }
+    function button2() {
+        document.querySelector('#button2').classList.add('clicked');
+        const array = document.getElementsByClassName('button2');
+        const array2 = document.getElementById('button2');
+        array2.style.display='none';
+        for (let i = 0; i < array.length; i++) {
+            array[i].style.display = 'flex';
+        }
+    }
+    function button1() {
+        document.querySelector('#button1').classList.add('clicked');
+        const array = document.getElementsByClassName('button1');
+        const array2 = document.getElementById('button1');
+        array2.style.display='none';
+        for (let i = 0; i < array.length; i++) {
+            array[i].style.display = 'flex';
+        }
+    }
+    function button4() {
+        document.querySelector('#button4').classList.add('clicked');
+        const array = document.getElementsByClassName('button4');
+        const array2 = document.getElementById('button4');
+        array2.style.display='none';
+        for (let i = 0; i < array.length; i++) {
+            array[i].style.display = 'flex';
+        }
+    }
+</script>
+</body>
+</html>
